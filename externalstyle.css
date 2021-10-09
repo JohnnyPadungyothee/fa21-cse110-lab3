@@ -107,3 +107,37 @@ button:active{
         background-color: white;
     }
 }
+
+*{
+    outline-color: black;
+    outline-width: 1pt;
+    outline-style:solid
+}
+
+a[href="https://github.com/JohnnyPadungyothee"]{
+    color:bisque;
+}
+
+h4, h5{
+    background-color:cornflowerblue;
+    color: lavenderblush;
+}
+
+footer p{
+    background-color: yellow;
+}
+
+h4 + a{
+    background-color: silver;
+    color: gold;
+}
+
+h5 ~ p{
+    background-color: gold;
+    color: silver;
+}
+
+h5.yeet{
+    background-color: black;
+    color: salmon;
+}
