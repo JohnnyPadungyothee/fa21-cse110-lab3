@@ -3,9 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <title>Meeting Minutes</title>
-        <link rel="style" href="externalstyle.css"/>
+        <link rel="stylesheet" href="externalstyle.css" />
         <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
     </head>
+    <style>
+        summary{
+            color: #4287f5
+        }
+    </style>
     <body>
         <header>
             <h1>Intro Team Meeting</h1>
@@ -22,7 +30,7 @@
                 </ol>
             </nav>
             <div class="Intro">
-                <section>
+                <section id="AttendanceGroup">
                     <h3 id="Attendance">Attendance:</h3>
                         <ul>
                             <li>Johnny Padungyothee</li>
@@ -33,7 +41,7 @@
                             <li>Dwight Howard</li>
                         </ul>
                 </section>
-                <section>
+                <section id=AgendaGroup>
                     <h3 id="Agenda">Agenda:</h3>
                         <ol>
                             <li>Name Introductions & Icebreaker</li>
@@ -44,15 +52,17 @@
                 </section>
             </div>
             <h3>Unfinshed Business</h3> 
-                <ol>
-                    <li>None!</li>
-                </ol>
+                <div class = "grid-container">
+                    <div>Names</div>
+                    <div>Experiences</div>
+                    <div>Pronouns</div>
+                </div>
             <h3>New Business</h3>
-                <ul>
-                    <li><strong>Work Habits</strong></li>
-                    <li><b>Personal Pet Peeves</b></li>
-                    <li><i>Availability</i></li>
-                </ul> 
+                <div class ="flex-container">
+                    <div><strong>Work Habits</strong></div>
+                    <div><b>Personal Pet Peeves</b></div>
+                    <div><i>Availability</i></div>
+                </div>
             <details>
                 <summary>Question/Comments/Concerns?</summary>
                 <ul>
@@ -62,19 +72,22 @@
 
             <h3 id="Media">Diagrams/Media</h3>
                 <p>Pictured below is a diagram of Johnny's poster<br>presentation from Spring 2021</p>
-                <img class="" src="poster.png" alt="ERSP Poster Prensentation" height="300" width="300">
+                <img class="poster" src="poster.png" alt="ERSP Poster Prensentation" height="300" width="300">
                 <hr>
-                <video controls width="500">
+                <video id="vid" controls width="500">
                     <source src="conceptvid.mp4" type="video/mp4">
                 </video>
                 <hr>
-                <figure>
-                    <figcaption>Current Favorite Song:</figcaption>
-                    <audio controls src="weekend.mp3"></audio>
-                </figure>
+                <section id="SongGroup">
+                    <figure>
+                        <figcaption>Current Favorite Song:</figcaption>
+                        <audio controls src="weekend.mp3"></audio>
+                    </figure>
+                </section>
             
-            <p><em>Please</em> fill out this form so we can get to know each other better</p>
-            <form>
+            <p style="color: red; text-align:center; text-decoration: underline; text-decoration-color: black; text-decoration-thickness: 5px;">
+                <em>Please</em> fill out this form so we can get to know each other better</p>
+            <form id="survey">
                     <fieldset>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
@@ -147,6 +160,8 @@
                         <button type="submit">Submit</button>
                     </fieldset>
             </form>
+            
+            
         </main>
 
         <footer>
