@@ -18,6 +18,9 @@ body{
     background-color: hsl(191, 83%, 77%);
 }
 
+/* 3 unique relative and absolute units */
+/* margins & padding */
+/* Navigation Links */
 nav{
     margin-top: .25in;
     margin-bottom: 7mm;
@@ -39,6 +42,11 @@ nav{
     border-radius: 150px;
 }
 
+/*text decoration and align done inline in index.html */
+/* summary color done in style element of index.html */
+/* font in html file */
+
+/* Agenda Header and List */
 #AgendaGroup{
     margin: auto;
     min-width: 500px;
@@ -46,27 +54,32 @@ nav{
     display: inline-block
 }
 
+/* All list items */
 li{
     color: #4287f5;
     font-family: 'Mukta', sans-serif;
 }
 
+/* audio file */
 #SongGroup{
     position: static;
 }
 
+/* poster file */
 .poster{
     position: relative;
     top: -7px;
     left: 20px;
 }
 
+/* form and all of its elements */
 #survey{
     height: 420px;
     width: 800px;
     display: inline;
 }
 
+/* submit button on form modifications; pseudo-class selector */
 button:hover{
     background-color: red;
     color: green;
@@ -76,6 +89,7 @@ button:active{
     background-color: blue;
 }
 
+/* new business flex container & elements */
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -89,6 +103,7 @@ button:active{
     background-color: lightcyan;
 }
 
+/* unfinished business grid container & elements */
 .grid-container{
     display: grid;
     grid-auto-rows: auto;
@@ -98,45 +113,54 @@ button:active{
     justify-content: center;
 }
 
+/* child selector */
 .grid-container > div{
     background-color: blanchedalmond;
 }
 
+/* white background if small width window; responsiveness */
 @media screen and (max-width: 720px){
     body{
         background-color: white;
     }
 }
 
+/* place black outline on everything; universal */
 *{
     outline-color: black;
     outline-width: 1pt;
     outline-style:solid
 }
 
+/* attribute selector */
 a[href="https://github.com/JohnnyPadungyothee"]{
     color:bisque;
 }
 
+/* selector list */
 h4, h5{
     background-color:cornflowerblue;
     color: lavenderblush;
 }
 
+/* descendant combinator */
 footer p{
     background-color: yellow;
 }
 
+/* adjacent sibling combinator */
 h4 + a{
     background-color: silver;
     color: gold;
 }
 
+/* general sibling combinator */
 h5 ~ p{
     background-color: gold;
     color: silver;
 }
 
+/* combining two selectors */
 h5.yeet{
     background-color: black;
     color: salmon;
